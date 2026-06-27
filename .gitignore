@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Environment variables
+.env
+
+# Google credentials
+credenciales_gcs.json
+
+# Airflow
+logs/
+airflow.db
+
+# Plugins
+plugins/
+
+# VS Code
+.vscode/
+
+# Mac
+.DS_Store
+
+# Data
+data/bronze/*
+data/silver/*
+data/gold/*
+
+# Mantener las carpetas
+!data/bronze/.gitkeep
+!data/silver/.gitkeep
+!data/gold/.gitkeep
