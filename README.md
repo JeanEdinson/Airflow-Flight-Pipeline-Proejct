@@ -25,7 +25,7 @@ El proyecto sigue buenas prácticas de ingeniería de software separando la lóg
 
 # 🏗️ Arquitectura
 
-![img](img/arquitectura.png)
+![Arquiectura](img/arquitectura.png)
 
 Todo el pipeline es orquestado por **Apache Airflow**, donde cada etapa se ejecuta como una tarea independiente.
 
@@ -208,6 +208,7 @@ Agregar:
 
 Además, colocar el archivo de service account de Google Cloud en la ruta del proyecto para posteriormente configurar la conexión desde la UI de Airflow.
 
+![Connection](img/connection.png)
 ---
 
 ## 3. Levantar Airflow
