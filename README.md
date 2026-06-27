@@ -25,24 +25,7 @@ El proyecto sigue buenas prácticas de ingeniería de software separando la lóg
 
 # 🏗️ Arquitectura
 
-```text id="8g5k2h"
-                           OpenSky Network API
-                                    │
-                                    ▼
-                          Ingesta de Datos Bronze
-                           (Raw JSON Storage)
-                                    │
-                                    ▼
-                     Transformación de Datos Silver
-                        (Cleaning & Standardization)
-                                    │
-                                    ▼
-                         Agregación de Datos Gold
-                      (Business-ready Metrics)
-                                    │
-                                    ▼
-                       Google Cloud Storage (GCS)
-```
+![img](img/arquitectura.png)
 
 Todo el pipeline es orquestado por **Apache Airflow**, donde cada etapa se ejecuta como una tarea independiente.
 
@@ -196,7 +179,6 @@ Airflow-Flight-Pipeline-Project
 * Python
 * Apache Airflow
 * Docker
-* Docker Compose
 * Pandas
 * Google Cloud Storage
 * OpenSky Network REST API
@@ -222,10 +204,9 @@ Crear un archivo `.env` basado en `.env.example`.
 Agregar:
 
 * Credenciales de PostgreSQL
-* Configuración de Airflow
-* Credenciales de Google Cloud
+* Credenciales de Airflow
 
-Además, colocar el archivo de service account de Google Cloud en la ruta configurada.
+Además, colocar el archivo de service account de Google Cloud en la ruta del proyecto para posteriormente configurar la conexión desde la UI de Airflow.
 
 ---
 
