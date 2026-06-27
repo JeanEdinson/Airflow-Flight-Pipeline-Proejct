@@ -265,37 +265,35 @@ Este proyecto demuestra conceptos clave de Data Engineering:
 
 ---
 
-# 🚀 Mejoras Futuras
+# 🚀 Próximos Pasos
 
-Posibles mejoras del proyecto:
+Este proyecto es la base de un roadmap más amplio orientado a la construcción de pipelines de datos modernos y escalables.
 
-* Validación de calidad de datos con Great Expectations
-* Tests unitarios e integración
-* Ingesta incremental
-* Logging y monitoring avanzado
-* CI/CD con GitHub Actions
-* Integración con BigQuery
-* Infraestructura como código con Terraform
-* Data lineage con OpenMetadata
+Los siguientes pasos planificados son:
 
----
+## ⚡ Nuevo proyecto con Apache Airflow + Spark
 
-# 📷 Capturas Recomendadas
+Se desarrollará un nuevo pipeline de datos utilizando:
 
-Se recomienda agregar:
+* **Apache Spark** para procesamiento distribuido de grandes volúmenes de datos.
+* **Apache Airflow** para la orquestación de workflows más complejos.
+* Procesamiento batch y posiblemente near real-time.
+* Optimización de transformaciones a nivel de performance y escalabilidad.
 
-* Ejecución del DAG en Airflow
-* Graph View del pipeline
-* Logs de ejecución
-* Bucket en Google Cloud Storage
-* Diagrama de arquitectura
+El objetivo es evolucionar desde un pipeline basado en Pandas hacia una arquitectura distribuida real utilizada en entornos de producción.
 
 ---
 
-# 👨‍💻 Sobre mí
+## 🧩 Adopción de TaskFlow API en Airflow
 
-Apasionado por Data Engineering, pipelines de datos, cloud computing y automatización de procesos.
+Se planea refactorizar y/o construir nuevos DAGs utilizando la **TaskFlow API de Airflow**, lo que permitirá:
 
-Este proyecto fue desarrollado como parte de mi aprendizaje en la construcción de pipelines escalables y automatizados usando herramientas modernas de Data Engineering.
+* Código más limpio y declarativo.
+* Uso de decoradores como `@task`.
+* Mejor manejo de dependencias entre tareas.
+* Menor uso de `XComs` explícitos.
+* Mayor legibilidad y mantenibilidad del DAG.
+
+Esto representará una evolución desde el enfoque tradicional con `PythonOperator` hacia un estilo más moderno y recomendado por Airflow.
 
 ---
