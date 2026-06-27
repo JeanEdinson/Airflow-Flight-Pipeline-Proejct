@@ -64,6 +64,10 @@ load_data_gcs
 
 Las tareas se comunican mediante **Airflow XComs**, permitiendo que cada etapa recupere dinámicamente los archivos generados por la anterior sin usar rutas hardcodeadas.
 
+![Dag](img/dag.png)
+
+![Dag Grafico](img/dag_grafico.png)
+
 ---
 
 # 🥉 Capa Bronze
@@ -143,6 +147,8 @@ gs://aggregated_flight_information/flights_data/
 ```
 
 Esto permite que los datos estén disponibles para dashboards, reporting o análisis downstream.
+
+![Bucket](img/bucket.png)
 
 ---
 
