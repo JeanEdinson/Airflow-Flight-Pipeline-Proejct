@@ -2,7 +2,7 @@
 
 Un proyecto de **Data Engineering end-to-end** que demuestra cómo construir un pipeline ETL estilo producción utilizando **Apache Airflow**, **Docker**, **Python** y **Google Cloud Storage (GCS)**.
 
-El pipeline ingiere datos en tiempo real desde la **OpenSky Network API**, los procesa siguiendo la arquitectura **Medallion (Bronze → Silver → Gold)** y almacena el dataset final agregado en Google Cloud Storage para análisis posteriores.
+El pipeline ingiere datos desde la **OpenSky Network API**, los procesa siguiendo la arquitectura **Medallion (Bronze → Silver → Gold)** y almacena el dataset final agregado en Google Cloud Storage para análisis posteriores.
 
 ---
 
@@ -239,7 +239,7 @@ Activar el DAG y ejecutarlo manualmente.
 
 Cada ejecución realiza automáticamente:
 
-1. Descarga datos en tiempo real desde OpenSky Network.
+1. Descarga datos desde OpenSky Network.
 2. Almacena datos crudos en Bronze.
 3. Transforma datos en Silver.
 4. Agrega métricas en Gold.
