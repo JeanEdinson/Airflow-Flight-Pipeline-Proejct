@@ -26,13 +26,3 @@ plugins/
 
 # Mac
 .DS_Store
-
-# Data
-data/bronze/*
-data/silver/*
-data/gold/*
-
-# Mantener las carpetas
-!data/bronze/.gitkeep
-!data/silver/.gitkeep
-!data/gold/.gitkeep
